@@ -18,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='8' fill='%230D1B2A'/%3E%3Cpath d='M4 36 L14 14 L22 24 L30 8 L40 36' stroke='white' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round' fill='none'/%3E%3Cline x1='4' y1='36' x2='40' y2='36' stroke='%23C9943A' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 
@@ -586,6 +589,16 @@
     </div>
   </nav>
 
+  <!-- ─────────────── DISCOUNT BANNER ─────────────── -->
+  <div style="background:var(--gold);padding:13px 24px;text-align:center;position:relative">
+    <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap">
+      <span style="font-size:13px;font-weight:700;color:var(--summit);letter-spacing:.04em;text-transform:uppercase">🎉 Founding Client Offer</span>
+      <span style="width:1px;height:16px;background:rgba(13,27,42,.2);display:inline-block"></span>
+      <span style="font-size:14px;font-weight:600;color:var(--summit)">Save 30% on your first 3 months — only 3 spots remaining in the Okanagan</span>
+      <button onclick="document.getElementById('contact').scrollIntoView()" style="background:var(--summit);color:#fff;border:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit">Claim your spot →</button>
+    </div>
+  </div>
+
   <!-- ─────────────── HERO ─────────────── -->
   <section class="hero">
     <svg class="hero-bg-art" width="560" height="320" viewBox="0 0 560 320" fill="none" aria-hidden="true">
@@ -594,7 +607,7 @@
     <div class="container">
       <div class="founding-pill">
         <span class="pulse"></span>
-        Now accepting founding clients — 3 spots open in the Okanagan
+        Founding client pricing — 30% off for 3 months · 3 spots left
       </div>
       <span class="eyebrow eyebrow-gold">Okanagan's dedicated agency for trades &amp; local service businesses</span>
       <h1>While you're reading this, homeowners in Vernon are Googling <em>your competitors.</em></h1>
@@ -614,8 +627,8 @@
 
   <!-- ─────────────── GOLD STRIP ─────────────── -->
   <div class="gold-strip">
-    <p>Free audit offer — We'll show you exactly where you're losing jobs to competitors. No pitch. Just data. <span>Takes 30 minutes.</span></p>
-    <button class="btn-sm-dark" onclick="document.getElementById('contact').scrollIntoView()">Claim your spot</button>
+    <p>Founding client deal — <strong>30% off your first 3 months</strong> when you sign before spots fill. Free audit included. <span>No contracts, no risk.</span></p>
+    <button class="btn-sm-dark" onclick="document.getElementById('contact').scrollIntoView()">Lock in 30% off →</button>
   </div>
 
   <!-- ─────────────── STATS ─────────────── -->
@@ -802,12 +815,14 @@
       <div class="section-header">
         <span class="eyebrow eyebrow-ridge">Pricing</span>
         <h2>Straightforward packages. No hidden fees. No surprises.</h2>
-        <p>Month-to-month after your initial 3-month setup period. We'd rather earn your business every month than lock you in.</p>
+        <p>Month-to-month after your initial 3-month setup period. <strong style="color:var(--gold)">Founding clients save 30% on all packages for their first 3 months.</strong> Only 3 spots remaining.</p>
       </div>
       <div class="pricing-grid">
         <div class="pr-card">
           <div class="pr-tier">Foundation</div>
-          <div class="pr-amount"><span class="dollar">$</span><span class="num">1,000</span><span class="per">/mo</span></div>
+          <div class="pr-amount"><span class="dollar">$</span><span class="num">1,050</span><span class="per">/mo</span></div>
+          <div style="font-size:12px;color:var(--text-3);text-decoration:line-through;margin-top:2px">Regular price $1,500/mo</div>
+          <div style="display:inline-block;background:#FFF3E0;color:#B45309;font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;margin:4px 0 0">Founding client — save 30%</div>
           <div class="pr-sub">Best for businesses just getting started online</div>
           <ul class="pr-features">
             <li><i class="ti ti-check" aria-hidden="true"></i>Google Business Profile optimization</li>
@@ -822,7 +837,9 @@
         <div class="pr-card featured">
           <div class="pr-badge">Most popular</div>
           <div class="pr-tier">Growth</div>
-          <div class="pr-amount"><span class="dollar">$</span><span class="num">3,000</span><span class="per">/mo</span></div>
+          <div class="pr-amount"><span class="dollar">$</span><span class="num">2,450</span><span class="per">/mo</span></div>
+          <div style="font-size:12px;color:rgba(255,255,255,.45);text-decoration:line-through;margin-top:2px">Regular price $3,500/mo</div>
+          <div style="display:inline-block;background:rgba(201,148,58,.2);color:#C9943A;font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;margin:4px 0 0">Founding client — save 30%</div>
           <div class="pr-sub">For businesses ready to fill their schedule and scale</div>
           <ul class="pr-features">
             <li><i class="ti ti-check" aria-hidden="true"></i>Everything in Foundation</li>
@@ -836,7 +853,9 @@
         </div>
         <div class="pr-card">
           <div class="pr-tier">Dominance</div>
-          <div class="pr-amount"><span class="dollar">$</span><span class="num">6,000</span><span class="per">/mo</span></div>
+          <div class="pr-amount"><span class="dollar">$</span><span class="num">4,550</span><span class="per">/mo</span></div>
+          <div style="font-size:12px;color:var(--text-3);text-decoration:line-through;margin-top:2px">Regular price $6,500/mo</div>
+          <div style="display:inline-block;background:#FFF3E0;color:#B45309;font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;margin:4px 0 0">Founding client — save 30%</div>
           <div class="pr-sub">For established businesses dominating their local market</div>
           <ul class="pr-features">
             <li><i class="ti ti-check" aria-hidden="true"></i>Everything in Growth</li>
